@@ -8,3 +8,5 @@ doc
 heckling
 pkg
 specdoc
+tmp/
+vendor/

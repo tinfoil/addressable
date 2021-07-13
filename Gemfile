@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 gemspec
 
 group :test do
-  gem 'rspec', '~> 3.5'
-  gem 'rspec-its', '~> 1.1'
+  gem 'rspec', '~> 3.8'
+  gem 'rspec-its', '~> 1.3'
 end
 
 group :development do
@@ -14,6 +14,7 @@ group :development do
 end
 
 group :test, :development do
+  gem 'memory_profiler'
   gem 'rake', '> 10.0', '< 12'
   gem 'simplecov', :require => false
   gem 'coveralls', :require => false, :platforms => [
@@ -29,4 +30,4 @@ group :test, :development do
   end
 end
 
-gem 'idn-ruby', :platform => [:mri_20, :mri_21, :mri_22, :mri_23, :mri_24]
+gem 'idn-ruby', :platform => [:mri_20, :mri_21, :mri_22, :mri_23, :mri_24, :mri_25]
